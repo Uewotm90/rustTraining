@@ -4,11 +4,11 @@ fn main() {
 
     println!("gæt et tal");
 
-    let mut guess = String::new();
+    let mut guess: String = String::new();
 
     io::stdin()
         .read_line(&mut guess)
-        .expect("du er dum knep dig selv");
+        .expect("du er dum");
 
     println!("your number is {guess}");
     unsafe {
